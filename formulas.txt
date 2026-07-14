@@ -1,0 +1,17 @@
+=SE($N2=""; ""; SE(ÉNÚM(CORRESP("Amigos/as"; ARRAYFORMULA(ARRUMAR(SPLIT($N2; ","))); 0)); 1; 0))
+=SE($N2=""; ""; SE(ÉNÚM(CORRESP("Companheira/o"; ARRAYFORMULA(ARRUMAR(SPLIT($N2; ","))); 0)); 1; 0))
+=SE($N2=""; ""; SE(ÉNÚM(CORRESP("Filhos/as"; ARRAYFORMULA(ARRUMAR(SPLIT($N2; ","))); 0)); 1; 0))
+=SE($N2=""; ""; SE(ÉNÚM(CORRESP("Outros familiares"; ARRAYFORMULA(ARRUMAR(SPLIT($N2; ","))); 0)); 1; 0))
+=SE($N2=""; ""; SE(ÉNÚM(CORRESP("Pais"; ARRAYFORMULA(ARRUMAR(SPLIT($N2; ","))); 0)); 1; 0))
+=SE($N2=""; ""; SE(ÉNÚM(CORRESP("Sozinha"; ARRAYFORMULA(ARRUMAR(SPLIT($N2; ","))); 0)); 1; 0))
+
+=SE($V2=""; ""; SE(ÉNÚM(CORRESP("Aspirador de pó"; ARRAYFORMULA(ARRUMAR(SPLIT($V2; ","))); 0)); 1; 0))
+=SE($V2=""; ""; SE(ÉNÚM(CORRESP("Máquina de lavar roupas"; ARRAYFORMULA(ARRUMAR(SPLIT($V2; ","))); 0)); 1; 0))
+=SE($V2=""; ""; SE(ÉNÚM(CORRESP("Tanquinho"; ARRAYFORMULA(ARRUMAR(SPLIT($V2; ","))); 0)); 1; 0))
+=SE($V2=""; ""; SE(ÉNÚM(CORRESP("Nenhum"; ARRAYFORMULA(ARRUMAR(SPLIT($V2; ","))); 0)); 1; 0))
+
+=SE($Z2=""; ""; SE(REGEXMATCH($Z2; "^\s*Não\s*$"); 1; 0))
+=SE($Z2=""; ""; SE(REGEXMATCH($Z2; "Sim, trabalho formal com carteira assinada/CLT/PJ"); 1; 0))
+=SE($Z2=""; ""; SE(REGEXMATCH($Z2; "Sim, trabalho informal, em atividade autônoma ou própria \(ex: consultora de vendas em cosméticos e produtos para o lar, artesanato, costura, cuidadora de animais de estimação e etc\)"); 1; 0))
+=SE($Z2=""; ""; SE(REGEXMATCH($Z2; "^\s*NR \(não respondeu\)\s*$"); 1; 0))
+=SE($Z2=""; ""; SE(REGEXMATCH($Z2; "^\s*NS \(não sabe\)\s*$"); 1; 0))
